@@ -1,0 +1,24 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ship.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plmfacanha/battleship.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/plmfacanha/battleship/issues"
+  },
+  "homepage": "https://github.com/plmfacanha/battleship#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}

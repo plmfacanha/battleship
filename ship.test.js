@@ -1,7 +1,10 @@
-import { Ship } from "./ship.js";
+import Ship from "./ship.js";
 
-const ship = new Ship(10);
+test("hit() called twice increase the damage by 2", () => {
+  const ship = new Ship(3);
 
-test("check the current damage of a Ship", () => {
-  expect(ship.hit(), toBe(1));
+  ship.hit();
+  ship.hit();
+
+  expect(ship.damage).toBe(2);
 });

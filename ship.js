@@ -6,17 +6,17 @@
 // * REMEMBER you only have to test your object’s public interface.
 // * Only methods or properties that are used outside of your ‘ship’ object need unit tests.
 
-export class Ship {
+export default class Ship {
   constructor(length) {
     this.length = length;
-    this.timesHit = 0;
+    this.damage = 0;
   }
 
   hit() {
-    this.timesHit++;
+    this.damage++;
   }
 
   isSunk() {
-    return this.timesHit >= this.length;
+    return this.damage >= this.length;
   }
 }

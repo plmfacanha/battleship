@@ -45,7 +45,7 @@ export default class Gameboard {
       shipEight,
     } = this.createShips();
 
-    console.log(shipOne);
+    // TODO: find a way to place the ship randomly on the board
   }
 }
 

@@ -10,4 +10,44 @@ import Ship from "./Ship.js";
   ? Gameboards should be able to report whether or not all of their ships have been sunk.
 
 */
-export default class Gameboard {}
+export default class Gameboard {
+  createShips() {
+    const shipOne = new Ship(1);
+    const shipTwo = new Ship(1);
+    const shipThree = new Ship(2);
+    const shipFour = new Ship(2);
+    const shipFive = new Ship(2);
+    const shipSix = new Ship(3);
+    const shipSeven = new Ship(3);
+    const shipEight = new Ship(4);
+
+    return {
+      shipOne,
+      shipTwo,
+      shipThree,
+      shipFour,
+      shipFive,
+      shipSix,
+      shipSeven,
+      shipEight,
+    };
+  }
+
+  placeShips() {
+    const {
+      shipOne,
+      shipTwo,
+      shipThree,
+      shipFour,
+      shipFive,
+      shipSix,
+      shipSeven,
+      shipEight,
+    } = this.createShips();
+
+    console.log(shipOne);
+  }
+}
+
+const gameboard = new Gameboard();
+gameboard.placeShips();

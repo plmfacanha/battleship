@@ -1,3 +1,5 @@
+import Ship from "./Ship.js";
+
 /* 
 * Create a Gameboard class/factory.
 
@@ -8,3 +10,4 @@
   ? Gameboards should be able to report whether or not all of their ships have been sunk.
 
 */
+export default class Gameboard {}

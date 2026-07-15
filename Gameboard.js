@@ -34,6 +34,8 @@ export default class Gameboard {
   }
 
   placeShips() {
+    board = [];
+
     const {
       shipOne,
       shipTwo,

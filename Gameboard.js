@@ -34,8 +34,6 @@ export default class Gameboard {
   }
 
   placeShips() {
-    board = [];
-
     const {
       shipOne,
       shipTwo,
@@ -48,6 +46,7 @@ export default class Gameboard {
     } = this.createShips();
 
     // TODO: find a way to place the ship randomly on the board
+    // ? possibly do the same as the last graph exercise where check all possible moves and out of bounds for each ship
   }
 }
 

@@ -11,43 +11,7 @@ import Ship from "./Ship.js";
 
 */
 export default class Gameboard {
-  createShips() {
-    const shipOne = new Ship(1);
-    const shipTwo = new Ship(1);
-    const shipThree = new Ship(2);
-    const shipFour = new Ship(2);
-    const shipFive = new Ship(2);
-    const shipSix = new Ship(3);
-    const shipSeven = new Ship(3);
-    const shipEight = new Ship(4);
-
-    return {
-      shipOne,
-      shipTwo,
-      shipThree,
-      shipFour,
-      shipFive,
-      shipSix,
-      shipSeven,
-      shipEight,
-    };
-  }
-
-  placeShips() {
-    const {
-      shipOne,
-      shipTwo,
-      shipThree,
-      shipFour,
-      shipFive,
-      shipSix,
-      shipSeven,
-      shipEight,
-    } = this.createShips();
-
-    // TODO: find a way to place the ship randomly on the board
-    // ? possibly do the same as the last graph exercise where check all possible moves and out of bounds for each ship
-  }
+  placeShip() {}
 }
 
 const gameboard = new Gameboard();

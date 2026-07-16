@@ -1,4 +1,7 @@
 import Ship from "./Ship.js";
+import Cell from "./Cell.js";
+
+const BOARD_SIZE = 10;
 
 /* 
 * Create a Gameboard class/factory.
@@ -10,9 +13,4 @@ import Ship from "./Ship.js";
   ? Gameboards should be able to report whether or not all of their ships have been sunk.
 
 */
-export default class Gameboard {
-  placeShip() {}
-}
-
-const gameboard = new Gameboard();
-gameboard.placeShips();
+export default class Gameboard {}
